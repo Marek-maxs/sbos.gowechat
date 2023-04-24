@@ -3,6 +3,7 @@
 package gowechat
 
 import (
+	"github.com/Marek-maxs/sbos.gowechat/mp/message"
 	"net/http"
 
 	"github.com/Marek-maxs/sbos.gowechat/mp/account"
@@ -56,7 +57,7 @@ func (c *MpMgr) GetTemplate() *template.Template {
 }
 
 // GetMsgHandler 消息管理
-func (c *MpMgr) GetMsgHandler(req *http.Request, writer http.ResponseWriter) *bridge.MsgHandler {
+func (c *MpMgr) GetMsgHandler(req *http.Request, writer http.ResponseWriter) (*bridge.MsgHandler, message.MixMessage) {
 	c.Context.Request = req
 	c.Context.Writer = writer
 	return bridge.NewMsgHandler(c.Context)
