@@ -57,7 +57,7 @@ func (c *MpMgr) GetTemplate() *template.Template {
 }
 
 // GetMsgHandler 消息管理
-func (c *MpMgr) GetMsgHandler(req *http.Request, writer http.ResponseWriter) (*bridge.MsgHandler, message.MixMessage) {
+func (c *MpMgr) GetMsgHandler(req *http.Request, writer http.ResponseWriter) *bridge.MsgHandler {
 	c.Context.Request = req
 	c.Context.Writer = writer
 	return bridge.NewMsgHandler(c.Context)

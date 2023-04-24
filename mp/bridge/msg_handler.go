@@ -33,11 +33,10 @@ type MsgHandler struct {
 }
 
 //NewMsgHandler init
-func NewMsgHandler(context *wxcontext.Context) (*MsgHandler, message.MixMessage) {
+func NewMsgHandler(context *wxcontext.Context) *MsgHandler {
 	srv := new(MsgHandler)
-	fmt.Println("NewMsgHandler:", srv)
 	srv.Context = context
-	return srv, srv.requestMsg
+	return srv
 }
 
 //Handle 处理微信的请求消息
