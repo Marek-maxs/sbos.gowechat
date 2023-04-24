@@ -7,8 +7,8 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/Marek-maxs/gowechat/mch/base"
-	"github.com/Marek-maxs/gowechat/util"
+	"github.com/Marek-maxs/sbos.gowechat/mch/base"
+	"github.com/Marek-maxs/sbos.gowechat/util"
 )
 
 //OrderInput 下单

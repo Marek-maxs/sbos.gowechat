@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	"github.com/Marek-maxs/gowechat"
-	"github.com/Marek-maxs/gowechat/mp/message"
-	"github.com/Marek-maxs/gowechat/wxcontext"
+	"github.com/Marek-maxs/sbos.gowechat"
+	"github.com/Marek-maxs/sbos.gowechat/mp/message"
+	"github.com/Marek-maxs/sbos.gowechat/wxcontext"
 )
 
 func main() {

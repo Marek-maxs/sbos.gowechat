@@ -5,14 +5,14 @@ package gowechat
 import (
 	"net/http"
 
-	"github.com/Marek-maxs/gowechat/mp/account"
-	"github.com/Marek-maxs/gowechat/mp/bridge"
-	"github.com/Marek-maxs/gowechat/mp/jssdk"
-	"github.com/Marek-maxs/gowechat/mp/material"
-	"github.com/Marek-maxs/gowechat/mp/menu"
-	"github.com/Marek-maxs/gowechat/mp/oauth"
-	"github.com/Marek-maxs/gowechat/mp/template"
-	"github.com/Marek-maxs/gowechat/mp/user"
+	"github.com/Marek-maxs/sbos.gowechat/mp/account"
+	"github.com/Marek-maxs/sbos.gowechat/mp/bridge"
+	"github.com/Marek-maxs/sbos.gowechat/mp/jssdk"
+	"github.com/Marek-maxs/sbos.gowechat/mp/material"
+	"github.com/Marek-maxs/sbos.gowechat/mp/menu"
+	"github.com/Marek-maxs/sbos.gowechat/mp/oauth"
+	"github.com/Marek-maxs/sbos.gowechat/mp/template"
+	"github.com/Marek-maxs/sbos.gowechat/mp/user"
 )
 
 //MpMgr mp mgr

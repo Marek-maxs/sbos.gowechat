@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/Marek-maxs/gowechat/wxcontext"
+	"github.com/Marek-maxs/sbos.gowechat/wxcontext"
 )
 
 //MchBase base mch

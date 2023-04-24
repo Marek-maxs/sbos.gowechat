@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Marek-maxs/gowechat"
-	"github.com/Marek-maxs/gowechat/mp/message"
-	"github.com/Marek-maxs/gowechat/wxcontext"
+	"github.com/Marek-maxs/sbos.gowechat"
+	"github.com/Marek-maxs/sbos.gowechat/mp/message"
+	"github.com/Marek-maxs/sbos.gowechat/wxcontext"
 )
 
 func hello(rw http.ResponseWriter, req *http.Request) {

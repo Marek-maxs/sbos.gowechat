@@ -1,4 +1,4 @@
-module github.com/Marek-maxs/gowechat
+module github.com/Marek-maxs/sbos.gowechat
 
 go 1.19
 

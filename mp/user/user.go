@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/Marek-maxs/gowechat/mp/base"
-	"github.com/Marek-maxs/gowechat/util"
-	"github.com/Marek-maxs/gowechat/wxcontext"
+	"github.com/Marek-maxs/sbos.gowechat/mp/base"
+	"github.com/Marek-maxs/sbos.gowechat/util"
+	"github.com/Marek-maxs/sbos.gowechat/wxcontext"
 )
 
 const (

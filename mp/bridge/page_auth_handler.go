@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/Marek-maxs/gowechat/mp/oauth"
-	"github.com/Marek-maxs/gowechat/mp/user"
-	"github.com/Marek-maxs/gowechat/wxcontext"
+	"github.com/Marek-maxs/sbos.gowechat/mp/oauth"
+	"github.com/Marek-maxs/sbos.gowechat/mp/user"
+	"github.com/Marek-maxs/sbos.gowechat/wxcontext"
 )
 
 //PageOAuthHandler 微信网页授权

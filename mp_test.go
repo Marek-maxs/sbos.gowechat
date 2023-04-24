@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/astaxie/beego"
-	"github.com/Marek-maxs/gowechat/wxcontext"
+	"github.com/Marek-maxs/sbos.gowechat/wxcontext"
 )
 
 func TestGetQrcode(t *testing.T) {

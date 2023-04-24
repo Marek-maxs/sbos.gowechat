@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/astaxie/beego"
-	"github.com/Marek-maxs/gowechat/mch/base"
-	"github.com/Marek-maxs/gowechat/util"
+	"github.com/Marek-maxs/sbos.gowechat/mch/base"
+	"github.com/Marek-maxs/sbos.gowechat/util"
 )
 
 //官方文档： https://pay.weixin.qq.com/wiki/doc/api/tools/cash_coupon.php?chapter=13_4&index=3
