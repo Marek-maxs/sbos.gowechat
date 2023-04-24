@@ -3,7 +3,6 @@
 package gowechat
 
 import (
-	"github.com/Marek-maxs/sbos.gowechat/mp/message"
 	"net/http"
 
 	"github.com/Marek-maxs/sbos.gowechat/mp/account"
