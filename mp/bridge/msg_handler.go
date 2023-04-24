@@ -75,6 +75,38 @@ func (srv *MsgHandler) Handle() error {
 	return nil
 }
 
+//Handle 获取微信的请求消息
+func (srv *MsgHandler) GetRequest() (error, message.MixMessage) {
+	//Request is GET
+	//微信公众平台，设置服务器后保存，会调用此方法来做验证
+	if strings.ToLower(srv.Context.Request.Method) == "get" {
+		if !srv.Validate() {
+			return fmt.Errorf("请求校验失败"), srv.requestMsg
+		}
+
+		echostr, exists := srv.GetQuery("echostr")
+		if exists {
+			srv.String(echostr) //微信公众平台需要将此值发送回去，来完成验证
+		}
+		return nil, srv.requestMsg
+	}
+
+	//Request is POST
+	//微信公众平台将消息post到服务器上
+	if strings.ToLower(srv.Context.Request.Method) == "post" {
+		_, err := srv.handleRequest()
+		if err != nil {
+			return err, srv.requestMsg
+		}
+		//debug
+		//fmt.Println("request msg = ", string(srv.requestRawXMLMsg))
+		fmt.Println("fromUserNmae:", srv.requestMsg.FromUserName)
+		fmt.Println("fromUserNmae:", srv.requestMsg.Event)
+		return nil, srv.requestMsg
+	}
+	return nil, srv.requestMsg
+}
+
 //Validate 校验请求是否合法
 func (srv *MsgHandler) Validate() bool {
 	timestamp := srv.Query("timestamp")
